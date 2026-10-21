@@ -1,0 +1,11 @@
+{
+  "name": "night-shift",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check dist/game.js && node --check dist/world.js && node --check dist/characters.js && node --check dist/audio.js",
+    "test": "node tests/level.mjs && node tests/level2.mjs && node tests/audio.mjs"
+  }
+}

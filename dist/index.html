@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101714">
+  <meta name="description" content="Two nights at the Willow Creek convenience store. A 3D horror game with voiced monsters, an original soundtrack, and something watching from the aisle.">
+  <title>Night Shift — Two Nights at Willow Creek</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="scene" aria-label="Three-dimensional convenience store"></div>
+  <div class="vignette"></div><div class="grain"></div>
+  <div id="loading"><span class="brand">WILLOW CREEK <b>24/7</b></span><span>Turning on the lights<span class="loading-dot">…</span></span></div>
+  <section id="menu" class="overlay hidden">
+    <header><span class="brand">WILLOW CREEK <b>24/7</b></span><span class="eyebrow">AN ORIGINAL HORROR GAME</span></header>
+    <div class="menu-content">
+      <div class="title-block"><div class="eyebrow"><i></i> TWO NIGHTS &nbsp; / &nbsp; ONE VERY BAD JOB</div><h1>NIGHT<br><em>SHIFT</em></h1><p>Some customers never went home.<br>Others were never human.</p><button id="start" class="primary">CLOCK IN <span>↗</span></button><div class="start-caption">CHOOSE YOUR SHIFT. SURVIVE UNTIL MORNING.</div></div>
+      <aside class="note"><span class="note-pin"></span><div class="note-heading">FOR THE NIGHT CLERK</div><p>Jimmy,</p><p>Give our regulars their change.<br>Check the mirror if you're unsure.</p><hr><ol><li>No reflection?<br><strong>Keep the change.</strong></li><li>A smile on the camera?<br><strong>Close the shutter.</strong></li><li>A shadow moving alone?<br><strong>Hit the floodlights.</strong></li></ol><p class="signature">— Management</p><div class="note-foot">P.S. There's no one working in the freezer.</div></aside>
+    </div>
+    <footer><span><kbd>W A S D</kbd> MOVE &nbsp; <kbd>MOUSE</kbd> LOOK &nbsp; <kbd>E</kbd> INTERACT</span><button id="menu-settings" class="text-button">AUDIO & SETTINGS</button><span class="footer-label">HEADPHONES RECOMMENDED · ORIGINAL SOUNDTRACK</span></footer>
+  </section>
+  <section id="levels" class="overlay hidden" aria-labelledby="levels-title">
+    <header><span class="brand">WILLOW CREEK <b>24/7</b></span><button id="levels-back" class="text-button">← BACK TO TITLE</button></header>
+    <div class="level-heading"><div class="eyebrow"><i></i> EMPLOYEE SCHEDULE / JIMMY</div><h2 id="levels-title">Pick your <em>night.</em></h2><p>Two shifts. Same store. A different kind of wrong.</p></div>
+    <div class="level-grid">
+      <article class="level-card first-night">
+        <div class="level-art" aria-hidden="true"><span class="tape-label">CAM 02 · 03:07 AM</span>
+          <svg viewBox="0 0 520 230" preserveAspectRatio="xMidYMid slice"><defs><radialGradient id="cold"><stop stop-color="#487e77"/><stop offset="1" stop-color="#101f1c"/></radialGradient><linearGradient id="floor" x2="0" y2="1"><stop stop-color="#314b43"/><stop offset="1" stop-color="#0a1311"/></linearGradient></defs><path fill="url(#cold)" d="M0 0h520v230H0z"/><path d="M0 155h520v75H0z" fill="url(#floor)"/><path d="M0 205h520M0 173h520M65 230l150-75m240 75L305 155m-45 0v75" stroke="#647a60" opacity=".3"/><path d="M202 35h116v124H202z" fill="#718c82" stroke="#8da49b" stroke-width="4"/><path d="M211 44h97v107h-97z" fill="#344e49"/><path d="M294 91v22" stroke="#b7c8b7" stroke-width="4"/><path d="M0 73l155 19v64L0 182m520-109L365 92v64l155 26" fill="#182d27" stroke="#405449" stroke-width="5"/><path d="M0 110l155 10m365-10l-155 10" stroke="#b19159" stroke-width="5"/><path d="M208 18h104" stroke="#e7e4b5" stroke-width="6"/><path d="M255 109c-25 0-31 49-24 62l2 58h16l7-51 8 51h15l-1-58c8-28 1-62-23-62" fill="#111b18"/><ellipse cx="255" cy="94" rx="17" ry="23" fill="#8b8a70"/><path d="M242 98q13 22 27-1q-13 8-27 1" fill="#f0e6c4"/><path d="M244 87h5m13 0h5" stroke="#101b17" stroke-width="3"/></svg>
+          <span class="level-number">01</span><span class="available"><i></i> AVAILABLE</span>
+        </div>
+        <div class="level-copy"><div class="eyebrow">THE FIRST SHIFT</div><h3>The late customers</h3><p>Knocking in the freezer. A smile on the camera. A shadow with a mind of its own.</p><div class="level-tags"><span>THE GRINNER</span><span>STRAY SHADOW</span></div><button id="level-one" class="primary">PLAY LEVEL 01 <span>↗</span></button></div>
+      </article>
+      <article class="level-card second-night">
+        <div class="level-art" aria-hidden="true"><span class="tape-label">CAM 02 · 04:07 AM</span>
+          <svg viewBox="0 0 520 230" preserveAspectRatio="xMidYMid slice"><defs><radialGradient id="watch"><stop stop-color="#55604d"/><stop offset="1" stop-color="#0b1817"/></radialGradient><g id="watch-eye"><path d="M-10 0Q0-10 10 0Q0 10-10 0" fill="#d9c6a1"/><ellipse rx="2.8" ry="4" fill="#40534c"/><circle r="1.5" fill="#060d0c"/></g></defs><path fill="url(#watch)" d="M0 0h520v230H0z"/><path d="M0 210l170-75V0M520 210L350 135V0M0 80l170 30m350-30l-170 30M0 150l170-20m350 0l170 20" fill="none" stroke="#657565" stroke-width="3" opacity=".3"/><path d="M254 20c-24 3-24 36-18 51-20 8-23 29-29 54l-35 82 17 7 46-70-10 86h80l-18-86 47 70 18-7-43-86c-3-19-10-44-33-51 8-21 6-50-22-50" fill="#09110f" stroke="#465348" stroke-width="2"/><use href="#watch-eye" x="250" y="42"/><use href="#watch-eye" x="265" y="61"/><use href="#watch-eye" x="247" y="83"/><use href="#watch-eye" x="274" y="98"/><use href="#watch-eye" x="239" y="112"/><use href="#watch-eye" x="263" y="129"/><use href="#watch-eye" x="253" y="152"/><use href="#watch-eye" x="279" y="171"/><use href="#watch-eye" x="241" y="194"/><use href="#watch-eye" x="266" y="215"/><use href="#watch-eye" x="217" y="144"/><use href="#watch-eye" x="202" y="173"/><use href="#watch-eye" x="304" y="146"/><use href="#watch-eye" x="320" y="178"/></svg>
+          <span class="level-number">02</span><span class="available"><i></i> AVAILABLE</span>
+        </div>
+        <div class="level-copy"><div class="eyebrow">THE SECOND SHIFT</div><h3>All eyes on you</h3><p>You only wanted a bag of chips. The Visionary wanted your attention. Call for help.</p><div class="level-tags"><span>THE VISIONARY</span><span>THE GRINNER RETURNS</span></div><button id="level-two" class="primary">PLAY LEVEL 02 <span>↗</span></button></div>
+      </article>
+    </div>
+    <footer><span>BOTH SHIFTS ARE AVAILABLE · PLAY IN ANY ORDER</span><span class="footer-label">KEEP THE PHONE CLOSE. KEEP THE SHUTTER CLOSER.</span></footer>
+  </section>
+  <main id="hud" class="hidden">
+    <div class="hud-top"><div><span class="brand small">WILLOW CREEK <b>24/7</b></span><div id="shift-label" class="shift-tag">JIMMY · LEVEL 01 · NIGHT CLERK</div></div><div class="clock"><span id="clock">03:07</span><small>AM · OCT 31</small></div></div>
+    <div class="objective"><div class="eyebrow" id="chapter">01 / THE FIRST CUSTOMER</div><h2 id="objective">Give the customer their change.</h2><p id="objective-hint">Approach the register and press E.</p></div>
+    <div id="countdown" class="hidden"><span id="countdown-label">CLOSE THE SHUTTER</span><strong id="seconds">20.0</strong><div><i id="timer-bar"></i></div></div>
+    <div id="crosshair"><i></i></div>
+    <div id="waypoint" class="hidden"><span id="waypoint-arrow">↓</span><small id="waypoint-label"></small></div>
+    <div id="prompt" class="hidden"><kbd>E</kbd><span></span></div>
+    <div id="subtitle" class="hidden" aria-live="polite"><small></small><p></p></div>
+    <div id="toast" class="hidden" aria-live="polite"></div>
+    <div class="hud-bottom"><div><kbd>E</kbd> INTERACT <span>·</span> <kbd>C</kbd> CAMERA <span>·</span> <kbd>M</kbd> MIRROR</div><button id="pause-button" class="text-button">Ⅱ PAUSE</button></div>
+    <div id="view-label" class="hidden"><span class="record-dot"></span><strong>CAM 02 / SHOP FLOOR</strong><span id="view-detail">LIVE · CHECK THE FACE</span><small>PRESS C TO RETURN</small></div>
+    <div id="scanlines" class="hidden"></div>
+    <div id="touch-controls"><div class="touch-move"><button data-key="KeyW">↑</button><div><button data-key="KeyA">←</button><button data-key="KeyS">↓</button><button data-key="KeyD">→</button></div></div><div><button id="touch-camera">CAM</button><button id="touch-action">E</button></div></div>
+  </main>
+  <section id="pause" class="overlay modal hidden"><div class="modal-card"><div class="eyebrow">TAKE A BREATH</div><h2>Shift paused.</h2><p>The timers are paused. The customers can wait.</p><button id="resume" class="primary">BACK TO WORK <span>↗</span></button><button id="restart" class="secondary">RESTART LEVEL</button><button id="pause-levels" class="secondary">CHOOSE A LEVEL</button><div class="settings"><label for="volume">MASTER VOLUME <output id="volume-value">75%</output></label><input id="volume" type="range" min="0" max="100" value="75"><label for="music-volume">MUSIC <output id="music-volume-value">35%</output></label><input id="music-volume" type="range" min="0" max="100" value="35"><label for="brightness">BRIGHTNESS <output id="brightness-value">100%</output></label><input id="brightness" type="range" min="65" max="170" value="100"><label class="check"><input id="captions" type="checkbox" checked> Dialogue subtitles</label><label class="check"><input id="reduce-motion" type="checkbox"> Reduce camera movement</label></div><p class="controls-note">WASD / arrows to move · Shift to run · Mouse / drag to look<br>E interact · C camera · M mirror · Esc pause<br>Touch: drag to look; use the on-screen movement buttons.</p><p class="audio-note">Synthetic character voices. Original horror music and sound effects.</p></div></section>
+  <section id="ending" class="overlay modal hidden"><div class="modal-card"><div id="end-tag" class="eyebrow">SHIFT COMPLETE</div><h2 id="end-title">You made it.</h2><p id="end-text">The store is quiet again. For now.</p><div id="end-stats"><span>4 CUSTOMERS</span><span>2 THREATS SURVIVED</span><span>1 VERY BAD NIGHT</span></div><button id="retry" class="primary">PLAY AGAIN <span>↗</span></button><button id="end-levels" class="secondary">CHOOSE A LEVEL</button><button id="end-menu" class="text-button">BACK TO TITLE</button></div></section>
+  <div id="flash"></div>
+  <script type="module">import('./game.js').catch(error=>{document.querySelector('#loading > span:last-child').textContent='The store could not load. Please refresh. '+error.message;console.error(error);});</script>
+</body>
+</html>
