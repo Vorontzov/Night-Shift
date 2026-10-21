@@ -2,6 +2,14 @@
 
 A first-person 3D horror game set in the Willow Creek convenience store. Play as Jimmy, the night clerk, and survive two nights. Click **Clock In** to choose either level; both are available immediately.
 
+## Play in your browser
+
+**[Play Night Shift](https://vorontzov.github.io/Night-Shift/)**
+
+No installation or local server is needed. The GitHub Pages site opens the game directly from this repository. Click **Clock In**, then choose Level 1 or Level 2.
+
+Pages publishes from `main` at `/ (root)`. The root `index.html` displays the game in `dist/`, and `.nojekyll` keeps the bundled assets unchanged. Updates pushed to `main` publish automatically through GitHub's built-in Pages deployment.
+
 ## Run locally
 
 Requires Node.js 18 or later. No package installation or API keys are needed.
